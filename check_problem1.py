@@ -7,7 +7,12 @@ obtuviste a mano. El resto del script construye G, calcula distancia,
 producto punto y ángulo, y declara si coinciden con tu solución.
 """
 
+import sys
+from pathlib import Path
+
 import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from crystallography_utils import (
     compute_metric_tensor,
